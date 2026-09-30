@@ -1,0 +1,16 @@
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias / builds (por si en el futuro se añaden)
+node_modules/
+dist/
+.cache/
+
+# Vercel
+.vercel/
+
+# Entornos / secretos
+.env
+.env.*

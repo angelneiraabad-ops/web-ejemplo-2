@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fórmula · Raíces Naturales</title>
+  <meta name="description" content="Detalle de formulación — Raíces Naturales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+</head>
+<body class="interior">
+
+  <header class="header is-scrolled" id="header">
+    <div class="contenedor header__row">
+      <a class="marca" href="index.html" aria-label="Raíces Naturales, inicio">
+        <span class="marca__nombre">Raíces Naturales</span>
+        <span class="marca__sub">Nutrición esencial</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a class="nav__link" href="formulas.html" aria-current="page">Fórmulas</a>
+        <a class="nav__link" href="estudio.html">Estudio</a>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="contacto.html">Contacto</a>
+        <a class="nav__cta btn" href="contacto.html">Iniciar Quiz</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="detalle">
+    <section class="page-intro">
+      <div class="contenedor">
+        <a class="volver" href="formulas.html">← Volver a fórmulas</a>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:clamp(20px,3vw,32px);">
+      <div class="contenedor">
+        <div class="detalle__media reveal">
+          <img id="detImg" src="assets/img/cuenco-servido.jpg" alt="Fórmula" />
+        </div>
+
+        <div class="detalle__grid">
+          <!-- Columna narrativa -->
+          <div class="reveal">
+            <p class="card__meta" id="detMeta">Alta Proteína · EU</p>
+            <h1 class="detalle__titulo serif" id="detNombre">Alpha: Angus &amp; Kale</h1>
+
+            <div class="detalle__bloque">
+              <h3>Descripción</h3>
+              <p id="detDesc"></p>
+            </div>
+            <div class="detalle__bloque">
+              <h3>Enfoque / Concepto</h3>
+              <p id="detApproach"></p>
+            </div>
+            <div class="detalle__bloque detalle__bloque--suave">
+              <h3>Créditos</h3>
+              <p id="detCredits"></p>
+            </div>
+          </div>
+
+          <!-- Ficha técnica -->
+          <aside class="reveal" data-delay="1">
+            <div class="ficha">
+              <div class="ficha__fila">
+                <span class="ficha__k">Ubicación</span>
+                <span class="ficha__v" id="detLocation"></span>
+              </div>
+              <div class="ficha__fila">
+                <span class="ficha__k">Año</span>
+                <span class="ficha__v" id="detYear"></span>
+              </div>
+              <div class="ficha__fila">
+                <span class="ficha__k">Tipo</span>
+                <span class="ficha__v" id="detType"></span>
+              </div>
+              <div class="ficha__fila">
+                <span class="ficha__k">Lote / Ración</span>
+                <span class="ficha__v" id="detBatch"></span>
+              </div>
+              <div class="ficha__fila">
+                <span class="ficha__k">Estado</span>
+                <span class="ficha__v ficha__estado" id="detStatus"></span>
+              </div>
+              <div class="ficha__fila">
+                <span class="ficha__k">Colaboración</span>
+                <span class="ficha__v" id="detCollab"></span>
+              </div>
+            </div>
+
+            <div style="margin-top:36px;">
+              <a class="btn" href="contacto.html">Iniciar configuración <span class="flecha">→</span></a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Navegación entre fórmulas -->
+        <nav class="detalle__nav" aria-label="Otras fórmulas">
+          <a id="detPrev" href="#">
+            <span class="k">← Anterior</span>
+            <span class="v serif"></span>
+          </a>
+          <a id="detNext" href="#">
+            <span class="k">Siguiente →</span>
+            <span class="v serif"></span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__top">
+        <div class="footer__marca">
+          <span class="marca__nombre serif">Raíces Naturales</span>
+          <div class="marca__sub">Nutrición esencial</div>
+          <p class="footer__lema serif">Nutrición canina esencial. Diseñada para perdurar.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Explorar</h4>
+            <ul>
+              <li><a href="formulas.html">Fórmulas</a></li>
+              <li><a href="estudio.html">Estudio</a></li>
+              <li><a href="journal.html">Journal</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Fórmulas</h4>
+            <ul>
+              <li><a href="formula.html?f=alpha">Alpha: Angus &amp; Kale</a></li>
+              <li><a href="formula.html?f=kura">Kura: Cordero Silvestre</a></li>
+              <li><a href="formula.html?f=veta">Veta: Pescado Blanco</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="anio"></span> Raíces Naturales</span>
+        <div class="footer__legal">
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Suscripción</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

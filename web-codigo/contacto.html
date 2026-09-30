@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · Raíces Naturales</title>
+  <meta name="description" content="Consultas sobre planes nutricionales personalizados, colaboraciones institucionales o atención especializada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+</head>
+<body class="interior">
+
+  <header class="header is-scrolled" id="header">
+    <div class="contenedor header__row">
+      <a class="marca" href="index.html" aria-label="Raíces Naturales, inicio">
+        <span class="marca__nombre">Raíces Naturales</span>
+        <span class="marca__sub">Nutrición esencial</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a class="nav__link" href="formulas.html">Fórmulas</a>
+        <a class="nav__link" href="estudio.html">Estudio</a>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="contacto.html" aria-current="page">Contacto</a>
+        <a class="nav__cta btn" href="contacto.html">Iniciar Quiz</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="contenedor">
+        <p class="eyebrow reveal">Contacto</p>
+        <h1 class="page-intro__title reveal">Configuración nutricional.</h1>
+        <p class="page-intro__lead reveal" data-delay="1">
+          Estamos a su disposición para consultas sobre planes nutricionales
+          personalizados, colaboraciones institucionales o atención
+          especializada.
+        </p>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:clamp(20px,3vw,40px);">
+      <div class="contenedor">
+        <div class="contacto__grid">
+
+          <!-- Info -->
+          <div class="contacto__info reveal">
+            <p class="eyebrow">Atención</p>
+            <p class="contacto__micro">
+              Complete el formulario y nuestro equipo clínico se pondrá en
+              contacto con usted en un plazo inferior a veinticuatro horas.
+            </p>
+            <div class="contacto__dato">
+              <span class="k">Oficina central</span>
+              <span class="v">Producción Local Certificada, EU</span>
+            </div>
+            <div class="contacto__dato">
+              <span class="k">Correspondencia</span>
+              <span class="v">hola@raicesnaturales.com</span>
+            </div>
+            <div class="contacto__dato">
+              <span class="k">Prensa &amp; colaboraciones</span>
+              <span class="v">estudio@raicesnaturales.com</span>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="reveal" data-delay="1">
+            <form class="form" id="formContacto" novalidate>
+              <div class="campo">
+                <label for="motivo">Motivo de consulta</label>
+                <select id="motivo" name="motivo" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                  <option>Plan Nutricional Personalizado</option>
+                  <option>Consulta Veterinaria</option>
+                  <option>Prensa &amp; Colaboraciones</option>
+                  <option>General</option>
+                </select>
+              </div>
+
+              <div class="form__fila form__fila--2">
+                <div class="campo">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required />
+                </div>
+                <div class="campo">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="su@correo.com" required />
+                </div>
+              </div>
+
+              <div class="form__fila form__fila--2">
+                <div class="campo">
+                  <label for="empresa">Empresa / Institución <span class="opt">(opcional)</span></label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Organización o clínica" />
+                </div>
+                <div class="campo">
+                  <label for="ubicacion">Ubicación</label>
+                  <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad, País" required />
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="presupuesto">Presupuesto estimado <span class="opt">(opcional)</span></label>
+                <select id="presupuesto" name="presupuesto">
+                  <option value="" disabled selected>Seleccione un rango</option>
+                  <option>Menos de 50 € / mes</option>
+                  <option>50 – 100 € / mes</option>
+                  <option>100 – 200 € / mes</option>
+                  <option>Más de 200 € / mes</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="mensaje">Mensaje / Descripción</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Describa los requerimientos específicos de su consulta…" required></textarea>
+              </div>
+
+              <div class="form__enviar">
+                <button type="submit" class="btn">Enviar comunicación <span class="flecha">→</span></button>
+                <span class="form__nota">Respondemos en menos de 24 h.</span>
+              </div>
+            </form>
+
+            <!-- Estado de éxito -->
+            <div class="form-exito" id="formExito" hidden>
+              <h3 class="serif">Comunicación recibida.</h3>
+              <p>
+                Su comunicación ha sido recibida con éxito. Le responderemos a la
+                brevedad desde nuestra oficina central.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__top">
+        <div class="footer__marca">
+          <span class="marca__nombre serif">Raíces Naturales</span>
+          <div class="marca__sub">Nutrición esencial</div>
+          <p class="footer__lema serif">Nutrición canina esencial. Diseñada para perdurar.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Explorar</h4>
+            <ul>
+              <li><a href="formulas.html">Fórmulas</a></li>
+              <li><a href="estudio.html">Estudio</a></li>
+              <li><a href="journal.html">Journal</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Fórmulas</h4>
+            <ul>
+              <li><a href="formula.html?f=alpha">Alpha: Angus &amp; Kale</a></li>
+              <li><a href="formula.html?f=kura">Kura: Cordero Silvestre</a></li>
+              <li><a href="formula.html?f=veta">Veta: Pescado Blanco</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="anio"></span> Raíces Naturales</span>
+        <div class="footer__legal">
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Suscripción</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

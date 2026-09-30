@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíces Naturales · Nutrición canina esencial</title>
+  <meta name="description" content="Raíces Naturales — alimento natural completo para perros. Ingredientes de origen verificado, formulación clínica y cero artificios. La materia esencial." />
+
+  <!-- Tipografías: Inter + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="header header--sobre-hero" id="header">
+    <div class="contenedor header__row">
+      <a class="marca" href="index.html" aria-label="Raíces Naturales, inicio">
+        <span class="marca__nombre">Raíces Naturales</span>
+        <span class="marca__sub">Nutrición esencial</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a class="nav__link" href="formulas.html">Fórmulas</a>
+        <a class="nav__link" href="estudio.html">Estudio</a>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="contacto.html">Contacto</a>
+        <a class="nav__cta btn" href="#configurador">Iniciar Quiz</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <!-- Requisito del brief: ningún texto se superpone al hero. -->
+    <section class="hero" aria-label="Raíces Naturales">
+      <div class="hero__media" id="heroMedia">
+        <img src="assets/img/hero-cuenco.jpg"
+             alt="Croquetas naturales de Raíces Naturales cayendo en un cuenco de cerámica"
+             fetchpriority="high" />
+      </div>
+
+      <div class="hero__contenido">
+        <p class="hero__eyebrow">Alimento natural para perros</p>
+        <h1 class="hero__titulo">Todo lo esencial.<br>Nada superfluo.</h1>
+        <p class="hero__sub">
+          Ingredientes de origen verificado y formulación clínica para
+          acompañar cada etapa de su vida.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="formulas.html">Explorar fórmulas <span class="flecha">→</span></a>
+          <a class="btn btn--claro" href="contacto.html">Configurar su plan</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#manifiesto" aria-label="Desplázate para descubrir más">
+        <span class="hero__scroll-txt">Descubrir</span>
+        <span class="hero__scroll-linea"></span>
+      </a>
+    </section>
+
+    <!-- ===================== BLOQUE 01 · MANIFIESTO ===================== -->
+    <section class="seccion" id="manifiesto">
+      <div class="contenedor manifiesto">
+        <div class="manifiesto__texto reveal">
+          <p class="eyebrow">La Materia Esencial</p>
+          <h1 class="manifiesto__frase serif">
+            Un retorno a lo <em>esencial</em> en la nutrición canina.
+          </h1>
+        </div>
+        <div class="manifiesto__cuerpo reveal" data-delay="1">
+          <p>
+            La alimentación de un perro ha estado dominada por la opacidad
+            industrial. Proponemos otra vía: ingredientes puros, ciencia
+            biológica transparente y un respeto absoluto por la vida que nos
+            acompaña.
+          </p>
+          <p>
+            Menos ruido. Mayor sustancia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOQUE 02 · EJES DE VALOR ===================== -->
+    <section class="seccion ejes">
+      <div class="contenedor">
+        <p class="eyebrow reveal">Ejes fundamentales</p>
+        <div class="ejes__grid">
+          <article class="eje reveal">
+            <span class="eje__num">01</span>
+            <div>
+              <h3 class="eje__titulo">Origen verificado</h3>
+              <p class="eje__texto">
+                Cada componente de nuestras recetas posee trazabilidad
+                absoluta, desde su fuente original hasta el plato.
+              </p>
+            </div>
+          </article>
+          <article class="eje reveal" data-delay="1">
+            <span class="eje__num">02</span>
+            <div>
+              <h3 class="eje__titulo">Formulación clínica</h3>
+              <p class="eje__texto">
+                Desarrollado junto a especialistas en nutrición veterinaria,
+                priorizando la biodisponibilidad y la salud a largo plazo.
+              </p>
+            </div>
+          </article>
+          <article class="eje reveal" data-delay="2">
+            <span class="eje__num">03</span>
+            <div>
+              <h3 class="eje__titulo">Sin artificios</h3>
+              <p class="eje__texto">
+                Cero conservantes sintéticos, subproductos o procesos
+                desnaturalizantes. Únicamente materia viva.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOQUE 03 · FÓRMULAS ===================== -->
+    <section class="seccion" id="formulas">
+      <div class="contenedor">
+        <div class="formulas__head">
+          <div class="reveal">
+            <p class="eyebrow">Colección</p>
+            <h2 class="formulas__intro serif">Fórmulas maestras.</h2>
+          </div>
+          <a class="link-linea reveal" data-delay="1" href="formulas.html">
+            Explorar colección →
+          </a>
+        </div>
+
+        <div class="formulas__grid">
+          <!-- Fórmula Alpha -->
+          <a class="card reveal" href="formula.html?f=alpha">
+            <div class="card__media">
+              <span class="card__tag">Mantenimiento</span>
+              <img src="assets/img/cuenco-servido.jpg" alt="Fórmula Alpha: Angus & Kale" />
+            </div>
+            <div class="card__body">
+              <p class="card__meta">Alta Proteína · EU</p>
+              <h3 class="card__nombre serif">Alpha: Angus &amp; Kale</h3>
+              <p class="card__desc">
+                Res de pastoreo con vegetales de hoja orgánica para sostener la
+                masa magra y la densidad energética.
+              </p>
+              <span class="card__link link-linea">Ver fórmula →</span>
+            </div>
+          </a>
+
+          <!-- Fórmula Kura -->
+          <a class="card reveal" data-delay="1" href="formula.html?f=kura">
+            <div class="card__media">
+              <span class="card__tag">Hipoalergénico</span>
+              <img src="assets/img/cuenco-azul.jpg" alt="Fórmula Kura: Cordero Silvestre" />
+            </div>
+            <div class="card__body">
+              <p class="card__meta">Sensibilidad Digestiva · Oceanía</p>
+              <h3 class="card__nombre serif">Kura: Cordero Silvestre</h3>
+              <p class="card__desc">
+                Proteína novel de cordero de libre pastoreo con calabaza
+                orgánica, para sistemas digestivos sensibles.
+              </p>
+              <span class="card__link link-linea">Ver fórmula →</span>
+            </div>
+          </a>
+
+          <!-- Fórmula Veta -->
+          <a class="card reveal" data-delay="2" href="formula.html?f=veta">
+            <div class="card__media">
+              <span class="card__tag">Funcional</span>
+              <img src="assets/img/cuenco-color.jpg" alt="Fórmula Veta: Pescado Blanco & Algas" />
+            </div>
+            <div class="card__body">
+              <p class="card__meta">Soporte Dérmico y Cognitivo · UK</p>
+              <h3 class="card__nombre serif">Veta: Pescado Blanco &amp; Algas</h3>
+              <p class="card__desc">
+                Captura salvaje de pescado blanco con microalgas marinas, rica
+                en ácidos grasos esenciales.
+              </p>
+              <span class="card__link link-linea">Ver fórmula →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BANDA LIFESTYLE ===================== -->
+    <section class="lifestyle" aria-label="Nuestra filosofía">
+      <div class="lifestyle__media reveal">
+        <img src="assets/img/perro-cocina.jpg" alt="Un perro disfrutando de Raíces Naturales en casa" />
+      </div>
+      <div class="lifestyle__texto reveal" data-delay="1">
+        <p class="eyebrow">El estudio</p>
+        <p class="lifestyle__frase serif">
+          «La alimentación de un perro no es un problema logístico, sino un acto
+          diario de cuidado profundo.»
+        </p>
+        <p class="lifestyle__cuerpo">
+          Trabajamos en la intersección entre la ciencia veterinaria rigurosa y
+          el diseño minimalista, entendiendo que la elegancia verdadera reside
+          en la simplicidad de lo genuino.
+        </p>
+        <p style="margin-top:28px;">
+          <a class="link-linea" href="estudio.html">Conocer el estudio →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== BLOQUE 04 · CIERRE / CONFIGURADOR ===================== -->
+    <section class="seccion cierre" id="configurador">
+      <div class="contenedor">
+        <div class="cierre__inner reveal">
+          <p class="eyebrow" style="justify-content:center;">Configuración nutricional</p>
+          <h2 class="cierre__frase serif">
+            Cada organismo es irrepetible. Configure su plan nutricional a medida.
+          </h2>
+          <a class="btn" href="contacto.html">
+            Iniciar configuración
+            <span class="flecha">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__top">
+        <div class="footer__marca">
+          <span class="marca__nombre serif">Raíces Naturales</span>
+          <div class="marca__sub">Nutrición esencial</div>
+          <p class="footer__lema serif">Nutrición canina esencial. Diseñada para perdurar.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Explorar</h4>
+            <ul>
+              <li><a href="formulas.html">Fórmulas</a></li>
+              <li><a href="estudio.html">Estudio</a></li>
+              <li><a href="journal.html">Journal</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Fórmulas</h4>
+            <ul>
+              <li><a href="formula.html?f=alpha">Alpha: Angus &amp; Kale</a></li>
+              <li><a href="formula.html?f=kura">Kura: Cordero Silvestre</a></li>
+              <li><a href="formula.html?f=veta">Veta: Pescado Blanco</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="anio"></span> Raíces Naturales</span>
+        <div class="footer__legal">
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Suscripción</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
